@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<!--ほとんどネットのコピペです-->
+<style>
+
+        body { background:var(--theme-color); }
+
+        p{color:var(--theme-color);background:#000;font-family:"sans-serif";font-size:100px}
+
+button {
+  width: 80em;
+  height:80em;
+}
+
+    </style> 
+
+    <title>共通テストまであと何日</title>
+    <meta name="description" content="Kyoutsu test made ato nannnichi">
+    <meta name="generator" content="">
+
+<script>
+<!--コピペ-->
+
+function randomColor(name){
+  document.addEventListener('DOMContentLoaded', function(){
+    const btn = document.getElementById('change');
+    const current = document.getElementById('current-color');
+
+    randomColor();
+    btn.addEventListener('click', randomColor);
+
+    function randomColor(){
+      let result = "#";
+      for(let i = 0; i < 6; i++) {
+        result += (16 * Math.random() | 0).toString(16);
+      }
+      document.documentElement.style.setProperty(name, result);
+      current.textContent = result;
+    }
+  });  
+}
+randomColor('--theme-color');
+
+    </script>
+
+  </head>
+  <body>
+
+<div style="color:#fff; background:#000 ;font-size:50px;width:50%">共通テストまで</div>
+
+<div style="color:var(--theme-color); background:#000 ;font-size:150px;width:80%">
+
+<script language="JavaScript" src="https://www.nannichime.net/s.php?d=2023/1/14">
+</script>
+
+</div>
+
+<button class="btn" id="change"><div style="font-size:200px;color:var(--theme-color)">実行</div></button>
+
+<div>
+  <span id="current-color" style="color:var(--theme-color);font-size:50px;font-weight:bold;background:#000"></span>
+</div>
+
+<div style="color:#fff; background:#000 ;font-size:50px;width:40%;text-align:left">ツイートする</div>
+
+    <input type="image" alt="tweet" src="https://media.discordapp.net/attachments/929992251327787012/973203674924978176/IMG_2400.png"  style="width: 30%; height:30%;"
+onclick="window.open('https://twitter.com/intent/tweet?text=ああああああああああ', '_blank')">
+
+
+</html>
